@@ -5,17 +5,18 @@ import Activity.RunTimeData;
 
 public class GreaterCondition extends ClassName implements ConditionStrategy {
     private int greaterCondition = 0;
-    public GreaterCondition(){
+
+    public GreaterCondition() {
     }
-    public GreaterCondition(int greaterCondition){
-//        this.type = "GreaterCondition";
+
+    public GreaterCondition(int greaterCondition) {
         this.greaterCondition = greaterCondition;
     }
 
     @Override
-    public boolean check(RunTimeData runTimeData){
+    public boolean check(RunTimeData runTimeData) {
         boolean r = false;
-        if (runTimeData.getMoney()>greaterCondition){
+        if (runTimeData.getMoney() > greaterCondition) {
             r = true;
         }
         return r;

@@ -5,15 +5,6 @@ import Activity.Condition.ConditionStrategy;
 import Activity.Condition.GreaterCondition;
 
 public class ActivityBuilder {
-    private String type;
-    private String name;
-
-    public ActivityBuilder(String type, String name) {
-        this.type = type;
-        this.name = name;
-    }
-
-
     public Activity buildA(String activityName, int conditionMoney) {
         Activity a = new Activity();
         a.setType("buildA");
